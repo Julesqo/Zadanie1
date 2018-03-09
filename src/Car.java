@@ -6,20 +6,18 @@ public class Car {
     private double wielkoscSilnika;
     private int iloscMiejsc;
     private int mocSilnika;
-    private LocalDate dataWyprodukowania;
     private boolean czyAutomat;
     private boolean napedPrzod;
     private CarType typ;
     private CarBrand marka;
 
 
-    public Car(String nazwa, double spalanie, double wielkoscSilnika, int iloscMiejsc, int mocSilnika, LocalDate dataWyprodukowania, boolean czyAutomat, boolean napedPrzod, CarType typ, CarBrand marka) {
+    public Car(String nazwa, double spalanie, double wielkoscSilnika, int iloscMiejsc, int mocSilnika, boolean czyAutomat, boolean napedPrzod, CarType typ, CarBrand marka) {
         this.nazwa = nazwa;
         this.spalanie = spalanie;
         this.wielkoscSilnika = wielkoscSilnika;
         this.iloscMiejsc = iloscMiejsc;
         this.mocSilnika = mocSilnika;
-        this.dataWyprodukowania = dataWyprodukowania;
         this.czyAutomat = czyAutomat;
         this.napedPrzod = napedPrzod;
         this.typ = typ;
@@ -66,13 +64,7 @@ public class Car {
         this.mocSilnika = mocSilnika;
     }
 
-    public LocalDate getDataWyprodukowania() {
-        return dataWyprodukowania;
-    }
 
-    public void setDataWyprodukowania(LocalDate dataWyprodukowania) {
-        this.dataWyprodukowania = dataWyprodukowania;
-    }
 
     public boolean isCzyAutomat() {
         return czyAutomat;

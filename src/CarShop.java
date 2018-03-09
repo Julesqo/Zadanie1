@@ -4,5 +4,6 @@ import java.util.List;
 public class CarShop {
 
     String nazwa;
-    List ofertaSamochodowa = new ArrayList();
+    List<OfertaSamochodowa> listaOfert = new ArrayList<OfertaSamochodowa>();
+
 }
