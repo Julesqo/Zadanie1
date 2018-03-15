@@ -24,6 +24,9 @@ public class Car {
         this.marka = marka;
     }
 
+    public Car() {
+    }
+
     public String getNazwa() {
         return nazwa;
     }
@@ -96,5 +99,20 @@ public class Car {
 
     public void setMarka(CarBrand marka) {
         this.marka = marka;
+    }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "nazwa='" + nazwa + '\'' +
+                ", spalanie=" + spalanie +
+                ", wielkoscSilnika=" + wielkoscSilnika +
+                ", iloscMiejsc=" + iloscMiejsc +
+                ", mocSilnika=" + mocSilnika +
+                ", czyAutomat=" + czyAutomat +
+                ", napedPrzod=" + napedPrzod +
+                ", typ=" + typ +
+                ", marka=" + marka +
+                '}';
     }
 }
